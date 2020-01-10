@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/principal.css">
+	<title>Aspect Ratio</title>
+</head>
+<body>
+<h1 style="margin-left: 25px">Compara Tela</h1>
+<div class="flex-container">
+	<div class="flex">
+		<!-- Campos de entrada -->
+		<div class="row">
+			<div class="float">
+				<label>Aspect Ratio:</label><br>
+				<select>
+					<option value="4:3">Aspect Ratio 4:3</option>
+					<option value="16:9">Aspect Ratio 16:9</option>
+					<option value="18:9">Aspect Ratio 18:9</option>
+					<option value="21:9">Aspect Ratio 21:9</option>
+				</select>
+			</div>
+			
+			<div class="float">
+				<label for="input">Polegadas:</label><br>
+				<input type="number" placeholder="Digite a polegada..">
+				<button onclick="aspect(0)">Executar</button>
+			</div>
+		</div>
+		
+		<!-- div do monitor -->
+		<div style="overflow: auto;width: auto;">
+			<div class="monitor">Aspect Ratio 4:3</div>
+		</div>
+	</div>
+
+	<div class="flex">
+		<!-- Campos de entrada -->
+		<div class="row">
+			<div class="float">
+				<label>Aspect Ratio:</label><br>
+				<select>
+					<option value="4:3">Aspect Ratio 4:3</option>
+					<option value="16:9">Aspect Ratio 16:9</option>
+					<option value="18:9">Aspect Ratio 18:9</option>
+					<option value="21:9">Aspect Ratio 21:9</option>
+				</select>
+			</div>
+			
+			<div class="float">
+				<label for="input2">Polegadas:</label><br>
+				<input type="number" placeholder="Digite a polegada..">
+				<button onclick="aspect(1)">Executar</button>
+			</div>
+		</div>
+		
+		<!-- div do monitor -->
+		<div style="overflow: auto;max-width: 650px;">
+			<div class="monitor">Aspect Ratio 4:3</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
